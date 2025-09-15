@@ -1,23 +1,44 @@
 [
-    {
-        "id": 1,
-        "nombre": "Laptop",
-        "precio": 500.00,
-        "descripcion": "Laptop básica para uso diario",
-        "imagen": "💻"
-    },
-    {
-        "id": 2,
-        "nombre": "Mouse",
-        "precio": 25.99,
-        "descripcion": "Mouse inalámbrico",
-        "imagen": "🖱️"
-    },
-    {
-        "id": 3,
-        "nombre": "Teclado",
-        "precio": 45.00,
-        "descripcion": "Teclado mecánico",
-        "imagen": "⌨️"
-    }
+  {
+    "id": 1,
+    "nombre": "Laptop",
+    "precio": 500.00,
+    "descripcion": "Laptop básica para uso diario",
+    "imagen": "💻"
+  },
+  {
+    "id": 2,
+    "nombre": "Mouse",
+    "precio": 25.99,
+    "descripcion": "Mouse inalámbrico",
+    "imagen": "🖱️"
+  },
+  {
+    "id": 3,
+    "nombre": "Teclado",
+    "precio": 45.00,
+    "descripcion": "Teclado mecánico",
+    "imagen": "⌨️"
+  },
+  {
+    "id": 4,
+    "nombre": "Auriculares",
+    "precio": 35.00,
+    "descripcion": "Auriculares con micrófono",
+    "imagen": "🎧"
+  },
+  {
+    "id": 5,
+    "nombre": "Monitor",
+    "precio": 199.99,
+    "descripcion": "Monitor 24 pulgadas Full HD",
+    "imagen": "🖥️"
+  },
+  {
+    "id": 6,
+    "nombre": "Impresora",
+    "precio": 120.00,
+    "descripcion": "Impresora multifunción",
+    "imagen": "🖨️"
+  }
 ]

@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #eaac66 0%, #764ba2 100%);
     color: white;
     padding: 1rem 2rem;
     border-radius: 10px;
@@ -105,7 +105,7 @@ header h1 {
     margin-bottom: 2rem;
     color: #2c3e50;
     font-size: 2rem;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #eaac66, #764ba2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -168,7 +168,7 @@ header h1 {
 
 .add-to-cart-btn {
     width: 100%;
-    background: #27ae60;
+    background: #50b379;
     color: white;
     border: none;
     padding: 12px;
@@ -185,7 +185,7 @@ header h1 {
 
 /* Cart Sidebar */
 .cart-sidebar {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #eaac66 0%, #764ba2 100%);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
     position: sticky;
@@ -283,7 +283,7 @@ header h1 {
 
 .cart-item-price {
     font-weight: bold;
-    color: #ffeaa7;
+    color: #caffa7;
     font-size: 1rem;
 }
 
@@ -368,7 +368,7 @@ header h1 {
 }
 
 .checkout-btn {
-    background: linear-gradient(45deg, #f39c12, #e67e22);
+    background: linear-gradient(45deg, #c612f3, #e67e22);
     color: white;
     border: none;
     padding: 12px 25px;
