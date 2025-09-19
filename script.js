@@ -334,12 +334,34 @@ function mostrarModalVaciarCarrito() {
 }
 
 function mostrarModalLogin() {
-  mostrarModal({
-    icono: '👤',
-    titulo: 'Iniciar Sesión',
-    mensaje: 'Funcionalidad de login en desarrollo.\n\nPronto podrás:\n• Guardar tu carrito\n• Ver historial de compras\n• Gestionar tus datos\n• Recibir ofertas exclusivas',
-    textoConfirmar: 'Entendido',
-    textoCancel: '',
-    onConfirmar: null
-  });
+    mostrarModal({
+        icono: '👤',
+        titulo: 'Iniciar Sesión',
+        mensaje: `
+        <form id="login-form">
+            <p>Usuario:</p><input type="text" placeholder= "Usuario">
+            <p>Contraseña: </p> <input type= "password" placeholder= "Contraseña">
+        </form>,`,
+        textoConfirmar: 'Entendido',
+        textoCancel: '',
+        onConfirmar: () => {
+            const form = document.getElementById("login-form");
+            const email = form.elements[0].value;
+            const password = form.elements[1].value;
+            loginUsuario({email, password});
+        }
+
+    });
 }
+async function loginUsuario({email, password}) {
+    const response = await fetch('https://xp8qpg8w-3000.brs.devtunnels.ms/auth/login', {
+        method: 'POST',
+        headers: {
+           'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({email, password})
+     });
+     const data = await response.json();
+     console.log(data);
+     localStorage.setItem("usuarioLogueado", JSON.stringify(data));
+    }
